@@ -1,5 +1,10 @@
 class StaticPagesController < ApplicationController
   def home
+    @example_props = {
+      helloWorldData: {
+        name: "Example user"
+      }
+    }
   end
 
   def accessories

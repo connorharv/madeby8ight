@@ -8,23 +8,78 @@
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/mnt/c/Users/Connor/Desktop/Made By 8ight/madeby8ight/client/app/components/HelloWorld.jsx";
+var _jsxFileName = "/mnt/c/Users/conbo/OneDrive/Desktop/madeby8ight/client/app/components/HelloWorld.jsx";
 
 
 
 // Super simple example of the simplest possible React component
-const HelloWorld = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 5
-    }
-  }, "This is a simple test!");
-};
+class HelloWorld extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
+  static propTypes = (() => ({
+    helloWorldData: prop_types__WEBPACK_IMPORTED_MODULE_1___default().shape({
+      name: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)
+    }).isRequired
+  }))();
+
+  // Not necessary if we only call super, but we'll need to initialize state, etc.
+  constructor(props) {
+    super(props);
+    this.state = props.helloWorldData;
+    this.setNameDomRef = this.setNameDomRef.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange() {
+    const name = this.nameDomRef.value;
+    this.setState({
+      name
+    });
+  }
+  setNameDomRef(nameDomNode) {
+    this.nameDomRef = nameDomNode;
+  }
+  render() {
+    console.log('HelloWorld demonstrating a call to console.log in ' + 'spec/dummy/client/app/components/HelloWorld.jsx:18');
+    const {
+      name
+    } = this.state;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 7
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39,
+        columnNumber: 9
+      }
+    }, "Hello, ", name, "!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 9
+      }
+    }, "Say hello to:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+      type: "text",
+      ref: this.setNameDomRef,
+      defaultValue: name,
+      onChange: this.handleChange,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 11
+      }
+    })));
+  }
+}
 /* harmony default export */ __webpack_exports__["default"] = (HelloWorld);
 
 /***/ }),
@@ -42,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 // import basic
 
 
-react_on_rails__WEBPACK_IMPORTED_MODULE_0___default().register({
+react_on_rails__WEBPACK_IMPORTED_MODULE_0___default().render({
   HelloWorld: _components_HelloWorld__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
 
@@ -51,7 +106,7 @@ react_on_rails__WEBPACK_IMPORTED_MODULE_0___default().register({
 },
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, ["vendors-node_modules_react-on-rails_node_package_lib_ReactOnRails_full_js"], function() { return __webpack_exec__("./client/app/packs/client-bundle.js"); });
+/******/ __webpack_require__.O(0, ["vendors-node_modules_prop-types_index_js-node_modules_react-on-rails_node_package_lib_ReactOn-4d3ae8"], function() { return __webpack_exec__("./client/app/packs/client-bundle.js"); });
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

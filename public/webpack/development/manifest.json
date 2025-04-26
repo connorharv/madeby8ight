@@ -1,3 +1,19 @@
 {
-  "entrypoints": {}
+  "client-bundle.js": "/webpack/development/js/client-bundle.js",
+  "entrypoints": {
+    "client-bundle": {
+      "assets": {
+        "js": [
+          "/webpack/development/js/runtime.js",
+          "/webpack/development/js/vendors-node_modules_prop-types_index_js-node_modules_react-on-rails_node_package_lib_ReactOn-4d3ae8.js",
+          "/webpack/development/js/client-bundle.js"
+        ]
+      }
+    }
+  },
+  "js/client-bundle.js.map": "/webpack/development/js/client-bundle.js.map",
+  "js/runtime.js.map": "/webpack/development/js/runtime.js.map",
+  "js/vendors-node_modules_prop-types_index_js-node_modules_react-on-rails_node_package_lib_ReactOn-4d3ae8.js": "/webpack/development/js/vendors-node_modules_prop-types_index_js-node_modules_react-on-rails_node_package_lib_ReactOn-4d3ae8.js",
+  "js/vendors-node_modules_prop-types_index_js-node_modules_react-on-rails_node_package_lib_ReactOn-4d3ae8.js.map": "/webpack/development/js/vendors-node_modules_prop-types_index_js-node_modules_react-on-rails_node_package_lib_ReactOn-4d3ae8.js.map",
+  "runtime.js": "/webpack/development/js/runtime.js"
 }

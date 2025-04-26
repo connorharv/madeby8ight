@@ -21,7 +21,7 @@ development:
   <<: *default
   # Turn this to true if you want to use the rails/shakapacker check that the test
   # bundles need building. Also, remove the customization to spec/rails_helper.rb.
-  compile: false
+  compile: true
 
   public_output_path: webpack/development
 
