@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/mnt/c/Users/conbo/OneDrive/Desktop/madeby8ight/client/app/components/HelloWorld.jsx";
+var _jsxFileName = "/mnt/c/Users/Connor/Desktop/Made By 8ight/madeby8ight/client/app/components/HelloWorld.jsx";
 
 
 
@@ -84,6 +84,31 @@ class HelloWorld extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component
 
 /***/ }),
 
+/***/ "./client/app/components/Test.jsx":
+/*!****************************************!*\
+  !*** ./client/app/components/Test.jsx ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/mnt/c/Users/Connor/Desktop/Made By 8ight/madeby8ight/client/app/components/Test.jsx";
+
+const Test = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4,
+      columnNumber: 10
+    }
+  }, "Hello, World!");
+};
+/* harmony default export */ __webpack_exports__["default"] = (Test);
+
+/***/ }),
+
 /***/ "./client/app/packs/client-bundle.js":
 /*!*******************************************!*\
   !*** ./client/app/packs/client-bundle.js ***!
@@ -94,12 +119,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_on_rails__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-on-rails */ "./node_modules/react-on-rails/node_package/lib/ReactOnRails.full.js");
 /* harmony import */ var react_on_rails__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_on_rails__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_HelloWorld__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/HelloWorld */ "./client/app/components/HelloWorld.jsx");
+/* harmony import */ var _components_Test__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Test */ "./client/app/components/Test.jsx");
 // import basic
 
 
-react_on_rails__WEBPACK_IMPORTED_MODULE_0___default().render({
-  HelloWorld: _components_HelloWorld__WEBPACK_IMPORTED_MODULE_1__["default"]
+
+console.log("Attempting to register components");
+react_on_rails__WEBPACK_IMPORTED_MODULE_0___default().register({
+  HelloWorld: _components_HelloWorld__WEBPACK_IMPORTED_MODULE_1__["default"],
+  Test: _components_Test__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
+console.log("client-bundle.js is loaded");
+debugger;
 
 /***/ })
 

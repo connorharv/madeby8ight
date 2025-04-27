@@ -2,6 +2,9 @@
 import ReactOnRails from 'react-on-rails';
 
 import HelloWorld from "../components/HelloWorld";
+import Test from '../components/Test';
 
-ReactOnRails.render({HelloWorld})
-
+ReactOnRails.register({
+    HelloWorld,
+    Test,
+});
