@@ -16,7 +16,7 @@
   \*******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_on_rails__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-on-rails */ \"./node_modules/react-on-rails/node_package/lib/ReactOnRails.full.js\");\n/* harmony import */ var react_on_rails__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_on_rails__WEBPACK_IMPORTED_MODULE_0__);\n// import basic\n\n\n// Nothing should be rendered sever-side at the moment\n// This is all for static stuff (could be useful for basic stuff)\n\nreact_on_rails__WEBPACK_IMPORTED_MODULE_0___default().register({});\n\n//# sourceURL=webpack://app/./client/app/packs/server-bundle.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_on_rails__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-on-rails */ \"./node_modules/react-on-rails/node_package/lib/ReactOnRails.full.js\");\n/* harmony import */ var react_on_rails__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_on_rails__WEBPACK_IMPORTED_MODULE_0__);\n\n\n// Nothing should be rendered sever-side at the moment\n// This is all for static stuff (could be useful for basic stuff)\n\nreact_on_rails__WEBPACK_IMPORTED_MODULE_0___default().register({});\n\n//# sourceURL=webpack://app/./client/app/packs/server-bundle.js?");
 
 /***/ }),
 

@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get '/home',        to: 'static_pages#home'
-  get 'accessories',  to: 'static_pages#accessories'
+  get '/accessories',  to: 'static_pages#accessories'
   get '/about',       to: 'static_pages#about'
-  get 'contact',      to: 'static_pages#contact'
+  get '/contact',      to: 'static_pages#contact'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

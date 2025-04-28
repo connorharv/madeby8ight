@@ -1,10 +1,15 @@
-<head>
-  <title>Madeby8ight</title>
-</head>
+<% provide(:title, 'Home') %>
 
-<body>
-  <h1>Below is a react react_component!</h1>
-  <br />
-  <%= react_component("Test", prerender: false) %>
-  <%= react_component("HelloWorld", props: @example_props, prerender: false) %>
-</body>
+<html>
+  <body>
+    <h1>Welcome to Madeby8ight!</h1>
+    <h2>Below you can shop by category </h2>
+    <h3 class="inline">Large Bespoke Orders</h3>
+    <h3 class="inline">Specialty Items</h3>
+    <h3 class="inline">Make it Yours</h3>
+    <!-- Put this stuff in a header file-->
+    <%= link_to "About", about_path %>
+    <br />
+    <%= react_component("HelloWorld", props: @example_props, prerender: false) %>
+  </body>
+</html>

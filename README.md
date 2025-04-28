@@ -1,24 +1,5 @@
-# README
+# Made by 8ight
+This repository contains all of the code for the madeby8ight website. This company focuses on creating beautiful clothing for all
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Design
+This website has been designed using both ruby on rails and react for maximum functionality. Additionally, PostgreSQL is used as a heavy-weight but powerful database for client transactions.

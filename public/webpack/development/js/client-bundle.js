@@ -120,17 +120,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_on_rails__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_on_rails__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_HelloWorld__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/HelloWorld */ "./client/app/components/HelloWorld.jsx");
 /* harmony import */ var _components_Test__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Test */ "./client/app/components/Test.jsx");
-// import basic
+
+// Components for CSR
 
 
-
-console.log("Attempting to register components");
 react_on_rails__WEBPACK_IMPORTED_MODULE_0___default().register({
   HelloWorld: _components_HelloWorld__WEBPACK_IMPORTED_MODULE_1__["default"],
   Test: _components_Test__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
-console.log("client-bundle.js is loaded");
-debugger;
 
 /***/ })
 
