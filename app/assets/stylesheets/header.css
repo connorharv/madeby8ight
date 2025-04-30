@@ -4,8 +4,7 @@
     font-family: 'Icomoon';
 }
 
-.no-decoration {
-    text-decoration: none !important;
+.nav-link {
     font-size: 18px;
 }
 
@@ -26,6 +25,7 @@
 #navbarLeftMargin,
 #navbarRightMargin {
   flex: 1;
+  text-decoration: none;
 }
 
 #navbarRightMargin {

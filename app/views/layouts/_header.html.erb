@@ -1,12 +1,12 @@
 <%= stylesheet_link_tag 'header' %>
-<script src="https://kit.fontawesome.com/891a8f4c08.js" crossorigin="anonymous"></script>
+
 <nav class="navbar navbar-expand-lg d-flex">
   <!-- Left Section -->
   <div class="collapse navbar-collapse" id="navbarLeftMargin">
     <div class="navbar-nav">
-      <%= link_to "ACCESSORIES", accessories_path, class: "nav-link no-decoration blue" %>
-      <%= link_to "ABOUT", about_path, class: "nav-link no-decoration blue" %>
-      <%= link_to "CONTACT", contact_path, class: "nav-link no-decoration blue" %>
+      <%= link_to "ACCESSORIES", accessories_path, class: "nav-link blue" %>
+      <%= link_to "ABOUT", about_path, class: "nav-link blue" %>
+      <%= link_to "CONTACT", contact_path, class: "nav-link blue" %>
     </div>
   </div>
 
@@ -17,8 +17,14 @@
 
   <!-- Right Section -->
   <div class="collapse navbar-collapse" id="navbarRightMargin">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <i class="fa-solid fa-user"></i>
-    <i class="fa-solid fa-cart-shopping"></i>
+    <%= link_to "#", class: "blue" do %>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    <% end %>
+    <%= link_to "#", class: "blue" do %>
+      <i class="fa-solid fa-user"></i>
+    <% end %>
+    <%= link_to "#", class: "blue" do %>
+      <i class="fa-solid fa-cart-shopping"></i>
+    <% end %>
   </div>
 </nav>
