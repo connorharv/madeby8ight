@@ -1,0 +1,35 @@
+.main-background {
+    background-image: url('stock_home_background.jpg');
+    background-size: cover;
+    background-position: center; 
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.main-background h2 {
+    padding-bottom: 200px;
+}
+
+
+.orders-with-cards {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 20vw;
+    height: 15vh;
+    text-align: center;
+    height: fit-content;
+}

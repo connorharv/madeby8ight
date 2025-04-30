@@ -1,16 +1,13 @@
 .navbar {
     background: repeating-linear-gradient(to right, #ffffff, #ffffff 20px, #ebe7cd 20px, #ebe7cd 40px);
-
-    font-family: 'Icomoon';
+    width: 100vw;
 }
 
 .nav-link {
     font-size: 18px;
 }
 
-.blue {
-    color: #80b2cf;
-}
+
 
 .white {
     color: white;
@@ -25,7 +22,6 @@
 #navbarLeftMargin,
 #navbarRightMargin {
   flex: 1;
-  text-decoration: none;
 }
 
 #navbarRightMargin {

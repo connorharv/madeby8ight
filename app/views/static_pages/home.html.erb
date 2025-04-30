@@ -1,15 +1,45 @@
 <% provide(:title, 'Home') %>
 
-<html>
+<html lang="en">
+  <!-- Stylesheet for the home page -->
+  <head>
+    <%= stylesheet_link_tag 'home' %>
+  </head>
+  <!-- Main body -->
   <body>
-    <h1>Welcome to Madeby8ight!</h1>
-    <h2>Below you can shop by category </h2>
-    <h3 class="inline">Large Bespoke Orders</h3>
-    <h3 class="inline">Specialty Items</h3>
-    <h3 class="inline">Make it Yours</h3>
-    <!-- Put this stuff in a header file-->
-    <%= link_to "About", about_path %>
-    <br />
-    <%= react_component("HelloWorld", props: @example_props, prerender: false) %>
+    <section class="main-background">
+      <!-- Important stuff for the main page -->
+      <h1><b>Welcome to Made By Eight!</b></h1>
+      <h2><i>Your letter tells your story</i></h2>
+    </section>
+    <section class="orders-with-cards">
+      <!-- Card for large bespoke orders -->
+      <div class="card">
+        <%= image_tag "example1.jpg" %>
+        <div class="card-body">
+          <h5 class="card-title">Large Bespoke Orders</h5>
+          <p class="card-text"></p>
+          <%= link_to "Click to place an order", "#" %>
+        </div>
+      </div>
+      <!-- Specialty Items -->
+      <div class="card">
+        <%= image_tag "example2.jpg" %>
+        <div class="card-body">
+          <h5 class="card-title">Specialty Items</h5>
+          <p class="card-text">Other stuff for specialty stuff</p>
+          <%= link_to "Click for specialty stuff", "#" %>
+        </div>
+      </div>
+      <!-- Bespoke Items -->
+      <div class="card">
+        <%= image_tag "example3.jpg" %>
+        <div class="card-body">
+          <h5 class="card-title">Bespoke Items</h5>
+          <h6 class="card-text"><i>Make it yours</i></h6>
+          <%= link_to "Click for categories", "#" %>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

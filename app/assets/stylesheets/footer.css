@@ -1,0 +1,13 @@
+.footer {
+    background-color: #ebe7cd;
+    max-height: fit-content;
+    margin-top: 10px;
+
+    flex: 1 1 auto;
+    justify-content: center;
+    display: flex;
+}
+
+.footer > * {
+    padding: 10px;
+}

@@ -10,3 +10,12 @@
  *= require_tree .
  *= require self
  */
+
+ * {
+    font-family: 'Icomoon';
+ }
+
+ .blue {
+    color: #80b2cf;
+}
+
