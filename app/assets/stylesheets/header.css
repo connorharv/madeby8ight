@@ -6,6 +6,7 @@
 
 .no-decoration {
     text-decoration: none !important;
+    font-size: 18px;
 }
 
 .blue {
@@ -25,4 +26,13 @@
 #navbarLeftMargin,
 #navbarRightMargin {
   flex: 1;
+}
+
+#navbarRightMargin {
+    justify-content: flex-end;
+}
+
+i {
+    margin-right: 20px;
+    font-size: 150%;
 }
