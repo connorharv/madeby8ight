@@ -1,0 +1,16 @@
+#our-story,
+#size-guide {
+    background-image: url('stock_home_background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 15px;
+}

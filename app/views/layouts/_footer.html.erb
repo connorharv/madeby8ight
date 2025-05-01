@@ -1,13 +1,13 @@
 <%= stylesheet_link_tag 'footer' %>
 
 <div class="footer">
-  <%= link_to "Shop", "#", class: "blue" %>
+  <%= link_to "Shop", root_path, class: "blue" %>
   <div class="vr"></div>
-  <%= link_to "About us", "#", class: "blue" %>
+  <%= link_to "About us", "#{about_path}#our-story", class: "blue" %>
   <div class="vr"></div>
-  <%= link_to "Size Guide", "#", class: "blue" %>
+  <%= link_to "Size Guide", "#{about_path}#size-guide", class: "blue" %>
   <div class="vr"></div>
-  <%= link_to "Contact Information", "#", class: "blue" %>
+  <%= link_to "Contact Information", contact_path, class: "blue" %>
   <div class="vr"></div>
   <%= link_to "Shipping", "#", class: "blue" %>
   <div class="vr"></div>

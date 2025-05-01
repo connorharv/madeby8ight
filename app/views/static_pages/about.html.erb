@@ -1,2 +1,19 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<% provide(:title, "About") %>
+
+<html lang="en">
+  <!-- Stylesheet for the page -->
+  <head>
+    <%= stylesheet_link_tag 'about'%>
+  </head>
+  <!-- Main body section -->
+  <body>
+    <section id="our-story">
+      <h1><b>Our Story</b></h1>
+      <h2>Our brand's mission and vision are (to provide the best product in the world!)</h2>
+    </section>
+    <section id="size-guide">
+      <h1><b>Size Guide</b></h1>
+      <h2>See the chart below for a proper size guide to ensure the best fit</h2>
+    </section>
+  </body>
+</html>
